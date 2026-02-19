@@ -10,12 +10,11 @@ paths:
   #   {base_path}/{identity}/{day}/raw_data/{video}.mp4
   # Pipeline outputs go to:
   #   {base_path}/{identity}/{day}/pipeline/
-  # base_path: "Z:/Social_Looming/Behavior/5VLS_Singles"
-  base_path: "Z:/Social_Looming/Behavior/Quick_Test_Batch"
+  base_path: "Z:/.../Quick_Test_Batch"
   
   # Master scoring sheet (Excel file with loom timing, etc.)
-  # master_scoring_sheet: "C:/Users/jjmmc/Downloads/MasterScoringSheet_1.xlsx"
-  master_scoring_sheet: "C:/Users/molaslab/Downloads/MasterScoringSheet_1.xlsx"
+  # master_scoring_sheet: "C:/.../MasterScoringSheet_1.xlsx"
+  master_scoring_sheet: "C:/.../MasterScoringSheet_1.xlsx"
 
   # ROI definition files (if using predefined ROIs)
   roi_polygons: "resources/roi_polygons.csv"
@@ -79,7 +78,7 @@ events:
       path_key: "master_scoring_sheet"  # Resolves to paths.master_scoring_sheet
     # Example: Add Bonsai event source
     # - type: "bonsai_csv"
-    #   path: "Z:/Social_Looming/Behavior/5VLS/bonsai_events.csv"
+    #   path: "Z:/.../bonsai_events.csv"
     #   event_type_column: "event_type"
     #   time_column: "timestamp"
 
@@ -102,8 +101,8 @@ sleap:
     track_window: 3
 
   # Path to trained models
-  centroid_model: "C:/Users/molaslab/Documents/251201_171307.centroid.n=4997"
-  instance_model: "C:/Users/molaslab/Documents/251201_174829.centered_instance.n=4997"
+  centroid_model: "C:/.../251201_171307.centroid.n=4997"
+  instance_model: "C:/.../251201_174829.centered_instance.n=4997"
   
   # GPU Configuration
   gpu_device: "0"
@@ -165,7 +164,7 @@ roi:
   use_manual_labeling: true
 
   # Path to store manual ROI configurations (persists across runs)
-  manual_roi_config: "Z:/Social_Looming/Behavior/5VLS/manual_roi_config.json"
+  manual_roi_config: "Z:/.../manual_roi_config.json"
 
   # Nest zone parameters (calculated from floor corners)
   nest_percent_of_perspective: 0.2255
